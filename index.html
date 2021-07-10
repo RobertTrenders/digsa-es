@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Digsa</title>
+        
+        <link rel="shortcut icon" href="images/favicon.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/general2.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <img src="images/digsa.svg" alt="Digsa" />
+            <div class="btn" onclick="scrollToContact();">Quiero saber más</div>
+        </div>
+
+        <div class="content">
+            <div class="col">
+                <h1>General Pardiñas 114</h1>
+                <div class="row">
+                    <img src="images/1.png" alt="General Pardiñas 114" />
+                </div>
+                <p>El Barrio de Salamanca es uno de los barrios residenciales más elegantes y prestigiosos con el más alto nivel de vida. También destaca por sus nobles fachadas, que lo convierten en una bella representación para el mundo de la arquitectura clásica y vanguardista. La ubicación privilegiada en la calle General Pardiñas, hace de este edificio una de las mejores direcciones para vivir en el centro de Madrid.</p>
+                
+                <div class="row">
+                        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle+del+Gral.+Pardi%C3%B1as,+114,+28006+Madrid,+Espa%C3%B1a+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="row">
+                    <img class="img_left" src="images/2a.png" alt="General Pardiñas 114" />
+                    <img class="img_right" src="images/2b.png" alt="General Pardiñas 114" />
+                </div>
+                <p>Distribuido en dos plantas:</p>
+                <p>Al entrar a la propiedad nos encontramos con una amplia visión de la misma que consta con un aseo para invitados, amplia cocina de diseño y electrodomésticos de la marca Balay.</p>
+                <p>La cocina conecta con el luminoso salón por el cual tienes salida a una terraza de 25 m2, la cual, conecta también con una amplia habitación con armarios empotrados. Posteriormente, nos encontramos con otra habitación con armarios empotrados y un espacioso baño con ducha.</p>
+
+                <p>En la planta superior de la vivienda nos encontramos con la habitación de matrimonio destacando su amplio vestidor y baño con ducha con las mejores calidades.</p>
+                <p>Y por ultimo, lo mejor de la casa, una terraza de 60m2 con impresionantes vistas.</p>
+
+                <p><strong>El ático duplex más luminoso del barrio de Salamanca.</strong></p>
+                <div class="row">
+                    <img src="images/3.png" alt="General Pardiñas 114" />
+                </div>
+                <div class="row">
+                    <img class="img_left" src="images/4a.png" alt="General Pardiñas 114" />
+                    <img class="img_right" src="images/4b.png" alt="General Pardiñas 114" />
+                </div>
+                <div class="row">
+                    <img src="images/5.png" alt="General Pardiñas 114" />
+                </div>
+                <div class="row">
+                    <img src="images/6.png" alt="General Pardiñas 114" />
+                </div>
+                <div class="row">
+                    <img src="images/7.png" alt="General Pardiñas 114" />
+                </div>
+                <div class="row">
+                    <img src="images/8.png" alt="General Pardiñas 114" />
+                </div>
+            </div>
+            
+            <div class="contact">
+                <h2>Quiero saber más de esta propiedad</h2>
+                <form action="contact.php" method="POST">
+                    <label>Nombre</label>
+                    <input type="text" name="name" required />
+                    <label>Email</label>
+                    <input type="email" name="email" required />
+                    <label>Teléfono</label>
+                    <input type="number" name="phone" required />
+
+                    <input id="frm_btn" style="display: none;" type="submit" value="" />
+                    <div class="btn" onclick="onFrm();">Enviar</div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        function scrollToContact()
+        {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('.contact').offset().top
+            }, 2000);
+        }
+
+        function onFrm()
+        {
+            $('#frm_btn').click();
+        } 
+    </script>
+</html>

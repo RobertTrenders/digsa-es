@@ -1,0 +1,289 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header
+{
+    position: fixed;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.header img
+{
+    float: left;
+    height: 24px;
+}
+
+.header .btn
+{
+    float: right;
+    width: 200px;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    background-color: #FF4D1A;
+    line-height: 34px;
+    height: 34px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.header .btn:hover
+{
+    background-color: #F00;
+}
+
+.col
+{
+    float: left;
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+}
+
+.col .row
+{
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.col h1
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    color: #333;
+}
+
+.col img
+{
+    float: left;
+    width: 100%;
+}
+
+.col .img_left
+{
+    float: left;
+    width: calc(50% - 15px);
+}
+
+.col .img_right
+{
+    float: right;
+    width: calc(50% - 15px);
+}
+
+.col p
+{
+    float: left;
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 58px;
+    text-align: left;
+    color: #333;
+}
+
+.col p strong
+{
+    color: #000;
+}
+
+.contact
+{
+    float: left;
+    padding-top: 80px;
+    width: 50%;
+    overflow: hidden;
+    background-color: #000;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.contact h2
+{
+    float: left;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+}
+
+.contact.ok
+{
+    padding-top: 120px;
+    background-color: #FFF;
+}
+
+.contact.ok h2
+{
+    color: #333;
+}
+
+.contact form {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contact form label
+{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    color: #FFF;
+}
+
+.contact form input
+{
+    float: left;
+    margin-bottom: 30px;
+    width: calc(100% - 30px);
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    border: 0 none;
+}
+
+.contact form .btn
+{
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #FFF;
+    text-align: center;
+    background-color: #FF4D1A;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.contact form .btn:hover
+{
+    background-color: #F00;
+}
+
+.contact form .btn.ok
+{
+    font-size: 25px;
+    width: 230px;
+    margin-left: calc(50% - 115px);
+    margin-right: calc(50% - 115px);
+}
+.contact form .btn.ok:hover
+{
+    background-color: #F00;
+}
+
+@media (orientation: portrait) {
+    .header img
+    {
+        height: 20px;
+    }
+
+    .header .btn
+    {
+        width: 120px;
+        font-size: 13px;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .col
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .col h1
+    {
+        font-size: 32px;
+    }
+
+    .col p
+    {
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+    .contact {
+        padding-top: 40px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contact h2
+    {
+        float: left;
+        margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        text-align: center;
+        color: #FFF;
+        width: 100%;
+    }
+
+    .contact form label
+    {
+        float: left;
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        color: #FFF;
+    }
+
+    .contact form input
+    {
+        float: left;
+        margin-bottom: 20px;
+        width: calc(100% - 30px);
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+        color: #333;
+        border: 0 none;
+    }
+
+    .contact form .btn
+    {
+        float: left;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 30px;
+        padding: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        color: #FFF;
+        text-align: center;
+        background-color: #FF4D1A;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+}

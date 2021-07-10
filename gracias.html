@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digsa</title>
+        
+        <link rel="shortcut icon" href="images/favicon.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/general.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <img style="cursor: pointer;" onclick="location.assign('index.html');" src="images/digsa.svg" alt="Digsa" />
+        </div>
+
+        <div class="content">            
+            <div class="contact ok">
+                <h2>¡Gracias!</h2>
+                <form action="index.html">
+                    <input id="frm_btn" style="display: none;" type="submit" value="" />
+                    <div class="btn ok" onclick="onFrm();">Volver al sitio</div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        function onFrm()
+        {
+            $('#frm_btn').click();
+        }
+    </script>
+</html>
