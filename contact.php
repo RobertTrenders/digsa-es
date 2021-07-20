@@ -1,5 +1,5 @@
 <?php
-$EMAIL_TO = "ventas2@grupodigsa.com";
+$EMAIL_TO = "ventas@digsa.es";
 
 if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone'])){
 
@@ -56,3 +56,4 @@ $headers .= 'From: <noreply@digsa.com.ar>' . "\r\n";
 
 header('Location: gracias.html');
 die;
+?>
